@@ -1,357 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./custom.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vignesh | Angular & .NET Developer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./custom.css">
+    
     <link rel="icon" href="./images/portfolio-icon.png">
-    <title>Portfolio - Vignesh</title>
-  </head>
-  <body>
+</head>
+<body>
+    
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+    <div class="noise-overlay"></div>
 
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="logo">V.</span>
+        </div>
+        <div class="nav-links">
+            <a href="#about" class="nav-item">About</a>
+            <a href="#expertise" class="nav-item">Expertise</a>
+            <a href="#work" class="nav-item">Work</a>
+            <a href="#contact" class="nav-item btn-contact">Let's Talk</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+    
+    <div class="mobile-nav">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+    </div>
 
-    <!-- Header Section-->
-
-    <header id="header">
-        <div class="header container">
-            <div class="nav-bar">
-                <div class="brand">
-                    <a href="#hero"><h1><span>V</span>IGN<span>E</span>SH</h1></a>
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+            
+            <section class="hero">
+                <div class="hero-container">
+                    <p class="hero-subtitle reveal-text">Hello, my name is Vignesh</p>
+                    <h1 class="hero-title">
+                        <span class="line-wrap"><span class="line reveal-text">ANGULAR &</span></span>
+                        <span class="line-wrap"><span class="line reveal-text gradient-text">.NET CORE</span></span>
+                        <span class="line-wrap"><span class="line reveal-text">DEVELOPER</span></span>
+                    </h1>
+                    <div class="hero-bottom">
+                        <p class="hero-desc reveal-text">
+                            Crafting scalable, high-performance web applications with modern frontend frameworks and robust backend architectures.
+                        </p>
+                        <div class="scroll-indicator">
+                            <div class="mouse">
+                                <div class="wheel"></div>
+                            </div>
+                            <span>Scroll to explore</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="nav-list">
-                    <div class="hamburger">
-                        <div class="bar"> </div>
-                      </div>
-                            <ul>
-                                <li>
-                                    <a href="#hero" data-after="Home" class="nav-link">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#services" data-after="Services" class="nav-link">Services</a>
-                                </li>
-                                <li>
-                                    <a href="#projects" data-after="Projects" class="nav-link">Projects</a>
-                                </li>
-                                <li>
-                                    <a href="#about" data-after="About" class="nav-link">About</a>
-                                </li>
-                                <li>
-                                    <a href="#contact" data-after="Contact" class="nav-link">Contact</a>
-                                </li>
-                            </ul>
-                 </div>
-            </div>
+            </section>
+
+            <section id="about" class="about">
+                <div class="section-container">
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <h2 class="section-heading">
+                                <span class="line-wrap"><span class="line fade-up">Engineering the</span></span>
+                                <span class="line-wrap"><span class="line fade-up">digital future.</span></span>
+                            </h2>
+                            <div class="text-content fade-up">
+                                <p>I am a passionate Full Stack Developer specializing in the unique intersection of modern highly-interactive Angular frontends and highly-scalable .NET Core backends.</p>
+                                <p>My focus is on writing clean, maintainable code, designing optimized SQL databases, and building robust microservices that power enterprise-level applications.</p>
+                                <a href="#" class="btn btn-outline">Download Resume</a>
+                            </div>
+                        </div>
+                        <div class="about-visual fade-up">
+                            <div class="glass-container">
+                                <div class="stats-grid">
+                                    <div class="stat-card">
+                                        <h3 class="stat-number">2+</h3>
+                                        <p class="stat-label">Years Experience</p>
+                                    </div>
+                                    <div class="stat-card">
+                                        <h3 class="stat-number">10+</h3>
+                                        <p class="stat-label">Projects Delivered</p>
+                                    </div>
+                                    <div class="stat-card">
+                                        <h3 class="stat-number">100%</h3>
+                                        <p class="stat-label">Client Satisfaction</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="expertise" class="expertise">
+                <div class="section-container">
+                    <div class="section-header fade-up">
+                        <p class="subtitle">My Arsenal</p>
+                        <h2 class="section-heading">Technical <span>Expertise</span></h2>
+                    </div>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-card fade-up">
+                            <div class="skill-icon">
+                                <img src="https://img.icons8.com/color/144/000000/angularjs.png" alt="Angular">
+                            </div>
+                            <h3>Angular Ecosystem</h3>
+                            <p>Building dynamic SPAs, reactive forms, RxJS, NgRx state management, and reusable component architectures.</p>
+                        </div>
+                        <div class="skill-card fade-up" style="transition-delay: 0.1s">
+                            <div class="skill-icon">
+                                <img src="https://img.icons8.com/color/144/000000/net-framework.png" alt=".NET">
+                            </div>
+                            <h3>.NET Core & C#</h3>
+                            <p>Developing secure RESTful APIs, Clean Architecture, Entity Framework Core, and resilient microservices.</p>
+                        </div>
+                        <div class="skill-card fade-up" style="transition-delay: 0.2s">
+                            <div class="skill-icon">
+                                <img src="https://img.icons8.com/color/144/000000/sql.png" alt="SQL">
+                            </div>
+                            <h3>Database Systems</h3>
+                            <p>Designing relational schemas in SQL Server, optimizing complex queries, indexing, and data warehousing.</p>
+                        </div>
+                        <div class="skill-card fade-up" style="transition-delay: 0.3s">
+                            <div class="skill-icon">
+                                <img src="https://img.icons8.com/color/144/000000/typescript.png" alt="TypeScript">
+                            </div>
+                            <h3>Modern Web Tech</h3>
+                            <p>TypeScript, SCSS, HTML5, Git, Docker, CI/CD pipelines, and cloud deployments on Azure/AWS.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="marquee-container">
+                    <div class="marquee">
+                        <span>ANGULAR</span> <span class="dot">•</span>
+                        <span>.NET CORE</span> <span class="dot">•</span>
+                        <span>C#</span> <span class="dot">•</span>
+                        <span>SQL SERVER</span> <span class="dot">•</span>
+                        <span>TYPESCRIPT</span> <span class="dot">•</span>
+                        <span>RXJS</span> <span class="dot">•</span>
+                        <span>ENTITY FRAMEWORK</span> <span class="dot">•</span>
+                    </div>
+                    <div class="marquee">
+                        <span>ANGULAR</span> <span class="dot">•</span>
+                        <span>.NET CORE</span> <span class="dot">•</span>
+                        <span>C#</span> <span class="dot">•</span>
+                        <span>SQL SERVER</span> <span class="dot">•</span>
+                        <span>TYPESCRIPT</span> <span class="dot">•</span>
+                        <span>RXJS</span> <span class="dot">•</span>
+                        <span>ENTITY FRAMEWORK</span> <span class="dot">•</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="work" class="work">
+                <div class="section-container">
+                    <div class="section-header fade-up">
+                        <p class="subtitle">Selected Work</p>
+                        <h2 class="section-heading">Recent <span>Projects</span></h2>
+                    </div>
+
+                    <div class="projects-wrapper">
+                        <div class="project-row">
+                            <div class="project-info fade-up">
+                                <span class="project-num">01</span>
+                                <h3>Enterprise ERP System</h3>
+                                <p>A massive full-stack Enterprise Resource Planning dashboard built with Angular and ASP.NET Core Web API. Managed complex state with NgRx and handled millions of database records via optimized SQL queries.</p>
+                                <div class="tags">
+                                    <span>Angular</span>
+                                    <span>.NET Core</span>
+                                    <span>SQL Server</span>
+                                </div>
+                                <a href="#" class="btn btn-link magnetic">View Case Study<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                            </div>
+                            <div class="project-image-container parallax-img">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="ERP System">
+                            </div>
+                        </div>
+
+                        <div class="project-row reverse">
+                            <div class="project-info fade-up">
+                                <span class="project-num">02</span>
+                                <h3>Real-time Inventory CRM</h3>
+                                <p>Developed a high-performance inventory manager with real-time updates using SignalR. Features include a complex interactive UI built in Angular and highly-secured authorization APIs in C#.</p>
+                                <div class="tags">
+                                    <span>Angular</span>
+                                    <span>SignalR</span>
+                                    <span>C#</span>
+                                </div>
+                                <a href="#" class="btn btn-link magnetic">View Case Study<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                            </div>
+                            <div class="project-image-container parallax-img">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="CRM System">
+                            </div>
+                        </div>
+
+                        <div class="project-row">
+                            <div class="project-info fade-up">
+                                <span class="project-num">03</span>
+                                <h3>E-Commerce Platform API</h3>
+                                <p>Architected the backend infrastructure for a vast e-commerce platform. Implemented Clean Architecture, comprehensive unit testing, and integrated deeply with third-party payment gateways utilizing .NET Core.</p>
+                                <div class="tags">
+                                    <span>ASP.NET API</span>
+                                    <span>Entity Framework</span>
+                                    <span>Microservices</span>
+                                </div>
+                                <a href="#" class="btn btn-link magnetic">View Case Study<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                            </div>
+                            <div class="project-image-container parallax-img">
+                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="E-Commerce API">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact">
+                <div class="section-container">
+                    <div class="contact-wrapper fade-up">
+                        <div class="contact-content">
+                            <h2 class="huge-text">Let's build something <br><span class="gradient-text">extraordinary.</span></h2>
+                            <p class="contact-desc">Currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                            
+                            <div class="contact-details">
+                                <a href="mailto:contact@vignesh.dev" class="contact-link magnetic">
+                                    <span class="label">Email</span>
+                                    <span class="value">contact@vignesh.dev</span>
+                                </a>
+                                <div class="contact-link">
+                                    <span class="label">Location</span>
+                                    <span class="value">Bangalore, India</span>
+                                </div>
+                                <div class="contact-link">
+                                    <span class="label">Phone</span>
+                                    <span class="value">+91 99999 99999</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer-socials">
+                            <a href="#" class="social-icon">LinkedIn</a>
+                            <a href="#" class="social-icon">GitHub</a>
+                            <a href="#" class="social-icon">Twitter</a>
+                            <a href="#" class="social-icon">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© 2026 Vignesh. Crafted with Angular & .NET</p>
+                </div>
+            </section>
+
         </div>
-    </header>
+    </main>
 
-    <!-- Hero Section -->
-    <header id="hero">
-      <div class="hero container">
-        <div>
-          <h1>Hello,<span></span></h1>
-          <h1>My Name is <span></span></h1>
-          <h1>Vignesh <span></span></h1>
-          <a href="#about" type="button" class="cta">Portfolio</a>
-        </div>
-      </div>
-    </header>
-
-
-    <!-- Service Section -->
-    <section id="services">
-      <div class="services container">
-        <div class="service-top">
-          <h1 class="section-title">Ski<span>l</span>ls</h1>
-          <p>
-            Innovative Front End Developer with 2 years experience building and maintaining responsive websites in the recruiting industry.
-          </p>
-        </div>
-        <div class="service-bottom">
-          <div class="service-item">
-            <div class="icon">
-              <img
-                src="./icons/icons8-html-5.svg"
-                alt="services/logo"
-                title="services"
-              />
-            </div>
-            <h2>HTML</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-              ducimus architecto beatae ex labore non incidunt qui, aliquam enim
-              quasi iste quam autem eos laudantium fuga dolores illum itaque
-              veritatis!
-            </p>
-          </div>
-          <div class="service-item">
-            <div class="icon">
-              <img
-                src="./icons/icons8-css3.svg"
-                alt="services/logo"
-                title="services"
-              />
-            </div>
-            <h2>CSS / SCSS</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-              ducimus architecto beatae ex labore non incidunt qui, aliquam enim
-              quasi iste quam autem eos laudantium fuga dolores illum itaque
-              veritatis!
-            </p>
-          </div>
-          <div class="service-item">
-            <div class="icon">
-              <img
-                src="./icons/icons8-javascript.svg"
-                alt="services/logo"
-                title="services"
-              />
-            </div>
-            <h2>Javascript / Jquery</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-              ducimus architecto beatae ex labore non incidunt qui, aliquam enim
-              quasi iste quam autem eos laudantium fuga dolores illum itaque
-              veritatis!
-            </p>
-          </div>
-          <div class="service-item">
-            <div class="icon">
-              <img
-                src="./icons/icons8-react.svg"
-                alt="services/logo"
-                title="services"
-              />
-            </div>
-            <h2>React</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-              ducimus architecto beatae ex labore non incidunt qui, aliquam enim
-              quasi iste quam autem eos laudantium fuga dolores illum itaque
-              veritatis!
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Project Section -->
-    <section id="projects">
-      <div class="projects container">
-        <div class="project-header">
-          <h1 class="section-title">Recent <span>Projetcs</span></h1>
-        </div>
-        <div class="all-projects">
-          <div class="project-item">
-            <div class="project-info">
-              <h1>Project 1</h1>
-              <h2>Coding is Love</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                et ad, accusantium aliquid aperiam magnam praesentium excepturi
-                eum laboriosam illum eveniet, fugit amet similique quos,
-                temporibus consequatur impedit. Aut, odit?
-              </p>
-            </div>
-            <div class="project-image">
-              <img src="./images/img-1.png" alt="bg-img" />
-            </div>
-          </div>
-          <div class="project-item">
-            <div class="project-info">
-              <h1>Project 2</h1>
-              <h2>Coding is Love</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                et ad, accusantium aliquid aperiam magnam praesentium excepturi
-                eum laboriosam illum eveniet, fugit amet similique quos,
-                temporibus consequatur impedit. Aut, odit?
-              </p>
-            </div>
-            <div class="project-image">
-              <img src="./images/img-1.png" alt="bg-img" />
-            </div>
-          </div>
-          <div class="project-item">
-            <div class="project-info">
-              <h1>Project 3</h1>
-              <h2>Coding is Love</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                et ad, accusantium aliquid aperiam magnam praesentium excepturi
-                eum laboriosam illum eveniet, fugit amet similique quos,
-                temporibus consequatur impedit. Aut, odit?
-              </p>
-            </div>
-            <div class="project-image">
-              <img src="./images/img-1.png" alt="bg-img" />
-            </div>
-          </div>
-          <div class="project-item">
-            <div class="project-info">
-              <h1>Project 4</h1>
-              <h2>Coding is Love</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                et ad, accusantium aliquid aperiam magnam praesentium excepturi
-                eum laboriosam illum eveniet, fugit amet similique quos,
-                temporibus consequatur impedit. Aut, odit?
-              </p>
-            </div>
-            <div class="project-image">
-              <img src="./images/img-1.png" alt="bg-img" />
-            </div>
-          </div>
-          <div class="project-item">
-            <div class="project-info">
-              <h1>Project 5</h1>
-              <h2>Coding is Love</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                et ad, accusantium aliquid aperiam magnam praesentium excepturi
-                eum laboriosam illum eveniet, fugit amet similique quos,
-                temporibus consequatur impedit. Aut, odit?
-              </p>
-            </div>
-            <div class="project-image">
-              <img src="./images/img-1.png" alt="bg-img" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- About Section -->
-    <section id="about">
-      <div class="about container">
-        <div class="col-left">
-          <div class="about-img">
-            <img src="./images/resume-img.jpg" alt="image" />
-          </div>
-        </div>
-        <div class="col-right">
-          <h1 class="section-title">About <span>Me</span></h1>
-          <h2>Front End Developer</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            et iure eius rerum reprehenderit incidunt ipsum vero suscipit ex
-            itaque rem, illo ea quos placeat quaerat esse, aliquam inventore
-            voluptatem? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Doloremque et iure eius rerum reprehenderit incidunt ipsum vero
-            suscipit ex itaque rem, illo ea quos placeat quaerat esse, aliquam
-            inventore voluptatem?
-          </p>
-          <a href="#" type="button" class="cta resume" >Download Resume</a>
-        </div>
-        s
-      </div>
-    </section>
-
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="contact container">
-        <div class="contact-info">
-          <h1 class="section-title">Contact <span>Info</span></h1>
-        </div>
-        <div class="contact-items">
-          <div class="contact-item">
-            <div class="icon">
-              <img
-                src="./icons/icons8-phone-100.png"
-                alt="phone logo"
-                title="conact"
-              />
-            </div>
-            <div class="contact-info">
-              <h1>Phone</h1>
-              <h2>+91 9902901732</h2>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="icon">
-              <img
-                src="./icons/icons8-mail-100.png"
-                alt="phone logo"
-                title="conact"
-              />
-            </div>
-            <div class="contact-info">
-              <h1>Email</h1>
-              <h2>karthikvignesh3@gmail.com</h2>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="icon">
-              <img
-                src="./icons/icons8-map-marker-100.png"
-                alt="phone logo"
-                title="conact"
-              />
-            </div>
-            <div class="contact-info">
-              <h1>Address</h1>
-              <h2>Bangalore -  India</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Footer Section -->
-    <section id="footer">
-      <div class="footer container">
-        <div class="brand">
-          <h1><span>V</span>IGN<span>E</span>SH</h1>
-         </div>
-          <h2>Your Complete Web Solution</h2>
-          <div class="social-icon">
-            <div class="social-item">
-              <a href="#">
-                <img
-                  src="./icons/icons8-github.svg"
-                  alt="phone logo"
-                  title="github-icon"
-                />
-              </a>
-            </div>
-            <div class="social-item">
-              <a href="#">
-                <img
-                  src="./icons/icons8-instagram.svg"
-                  alt="phone logo"
-                  title="instagram-icon"
-                />
-              </a>
-            </div>
-            <div class="social-item">
-              <a href="#">
-                <img
-                  src="./icons/icons8-twitter-circled.svg"
-                  alt="phone logo"
-                  title="twitter-icon"
-                />
-              </a>
-            </div>
-            <div class="social-item">
-              <a href="#">
-                <img
-                  src="./icons/icons8-linkedin.svg"
-                  alt="phone logo"
-                  title="linkedIn-icon"
-                />
-              </a>
-            </div>
-          </div>
-          <p>Copyright © 2022 Vignesh. All rights reserved</p>
-      </div>
-    </footer>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
     <script src="./app.js"></script>
-  </body>
+</body>
 </html>
